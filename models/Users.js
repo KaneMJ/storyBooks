@@ -18,7 +18,7 @@ const UserSchema = new Schema({
     lastName: {
         type: String
     },
-    img: {
+    image: {
         type: String
     }
 })

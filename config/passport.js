@@ -23,7 +23,7 @@ module.exports = function(passport){
                 email: profile.emails[0].value,
                 image: image
             }
-
+           
             // Check for existing user
             User.findOne({
                 googldID: profile.id
