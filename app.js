@@ -55,7 +55,7 @@ app.use((req, res, next) => {
 });
 
 // Set static folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 //use Routes
 app.use('/auth', auth);
