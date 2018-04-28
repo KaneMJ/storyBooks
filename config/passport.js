@@ -23,7 +23,7 @@ module.exports = function(passport){
                 email: profile.emails[0].value,
                 image: image
             }
-
+           
             // Check for existing user
             User.findOne({
                 googldID: profile.id
@@ -40,4 +40,12 @@ module.exports = function(passport){
             })
         })
     )
+
+    passport.serializeUser((user, done) => {
+        done(null, user.id);
+    });
+
+    passport.deserializeUser((id, done) => {
+        User.findById(id).then(user => done(null, user));
+    });
 }
