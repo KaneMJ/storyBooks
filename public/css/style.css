@@ -8,11 +8,22 @@ main {
     flex: 1 0 auto;
 }
 
-.nav-wrapper .fa-bars{
+.nav-wrapper .fa-bars {
     font-size: 25px;
 }
 
-.ideaSubmit
-{
+.ideaSubmit {
     margin-bottom: 3%;
+}
+
+.story-text{
+    height: 100px;
+}
+
+.dash-status {
+    text-transform: capitalize;
+}
+
+#delete-form {
+    display: inline;
 }
